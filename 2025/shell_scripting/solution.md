@@ -62,6 +62,9 @@ This challenge involves creating a Bash script that backs up a specified directo
 - Uses `mkdir -p` to ensure the backup directory exists.
 - Utilizes `tar` to create a compressed `.tar.gz` backup.
 - Implements rotation logic using `ls`, `awk`, and `xargs` to keep only the last three backups.
+- Reference Links:
+  - [Linux `expr` command for calculations](https://vitux.com/linux-expr-command/#:~:text=10%20%2B%2020%20%2B%2030-,Subtraction,and%20expr%20command%20as%20follows.)
+  - [Keeping only recent files in Linux](https://stackoverflow.com/questions/73641093/is-there-any-linux-command-to-keep-only-5-recent-files-that-start-with-ref-in-a)
 
 ---
 
