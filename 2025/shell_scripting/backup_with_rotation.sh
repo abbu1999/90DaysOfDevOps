@@ -17,6 +17,7 @@ tar -cvzf backup-$(date '+%d-%b-%Y-%H-%M-%S').tar.gz -P "$1"
 info
 
 ls -ltrh backup-* | head -n+$(expr $(ls -ltrh | grep backup- | wc -l) - 3) | awk '{print $NF}' | xargs --no-run-if-empty rm  
+
 <<info
  Lists all backup files sorted by modification time (oldest first)
  head -n+$(expr $(ls -ltrh | grep backup- | wc -l) - 3)  
